@@ -1,0 +1,8 @@
+services:
+  pubsub-emulator:
+    image: google/cloud-sdk:emulators
+    command: ["/bin/bash", "-c", "gcloud beta emulators pubsub start --project=some-project-id --host-port='0.0.0.0:8085'"]
+    ports:
+      - "8085:8085"
+    volumes:
+      - "/var/run/docker.sock:/host/var/run/docker.sock"  # Allow the container to access the Docker host socket
