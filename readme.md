@@ -22,3 +22,11 @@ Vá à pasta de cada projeto e então faça:
     dotnet run
 
 Importante, dizer que é necessário subir rodar o docker compose antes de qualquer um dos projetos, pois eles vão tentar se conectar com essa instância do PubSub. Além disso, uma inscrição só pode ser criada depois que um tópico foi criado, logo, se tentar subir o projeto de Consumidor antes do Produtor isso vai resultar em erro, por conta disso existe um passo, uma espera intencional do código do Consumidor precedido de uma mensagem: “Podemos?” no console, para que você confirme (usando qualquer tecla) que o Produtor já foi configurado.
+
+
+## Referências
+[Como instalar a imagem Docker da Google Cloud CLI | Google Cloud CLI Documentation](https://cloud.google.com/sdk/docs/downloads-docker?hl=pt-br)
+
+[Running GCP PubSub emulator on a local Docker environment | by Cristian Popescu | Medium](https://medium.com/@crip.popescu/running-gcp-pubsub-emulator-on-a-local-docker-environment-735c7f1e1f41)
+
+[Como testar aplicativos localmente com o emulador | Pub/Sub Documentation | Google Cloud](https://cloud.google.com/pubsub/docs/emulator?hl=pt-br)

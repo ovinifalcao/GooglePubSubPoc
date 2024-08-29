@@ -5,4 +5,4 @@ services:
     ports:
       - "8085:8085"
     volumes:
-      - "/var/run/docker.sock:/host/var/run/docker.sock"  # Allow the container to access the Docker host socket
+      - "/var/run/docker.sock:/host/var/run/docker.sock"
